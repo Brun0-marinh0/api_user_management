@@ -1,0 +1,77 @@
+.
+├── docker-compose.yml
+├── Dockerfile
+├── entrypoint.sh
+├── nest-cli.json
+├── package.json
+├── README.md
+├── src
+│   ├── app.controller.spec.ts 
+│   ├── app.controller.ts
+│   ├── app.module.ts
+│   ├── app.service.ts
+│   ├── common
+│   │   ├── base.repository.ts
+│   │   └── middlewares
+│   │       └── auth.middleware.ts
+│   ├── database
+│   │   └── data-source.ts
+│   ├── main.ts
+│   ├── migrations
+│   │   ├── 1711597252156-create-table-roles.ts
+│   │   └── 1711597382071-create-table-users.ts
+│   └── module
+│       ├── auth
+│       │   ├── auth.controller.ts
+│       │   ├── auth.module.ts
+│       │   ├── auth.service.ts
+│       │   ├── dto
+│       │   │   ├── login.dto.ts
+│       │   │   └── validate-token.dto.ts
+│       │   └── strategies
+│       │       └── jwt.strategy.ts
+│       ├── roles
+│       │   ├── entities
+│       │   │   └── roles.entity.ts
+│       │   ├── repositories
+│       │   │   ├── roles.repository.interface.ts
+│       │   │   └── roles.repository.ts
+│       │   ├── roles.controller.ts
+│       │   ├── roles.module.ts
+│       │   └── use-cases
+│       │       └── list-roles
+│       │           └── list-roles.use-case.ts
+│       └── users
+│           ├── dto
+│           │   ├── count-users.dto.ts
+│           │   ├── create-user.dto.ts
+│           │   └── update-user.dto.ts
+│           ├── entities
+│           │   └── user.entity.ts
+│           ├── repositories
+│           │   ├── users.repository.interface.ts
+│           │   └── users.repository.ts
+│           ├── use-cases
+│           │   ├── count-users
+│           │   │   └── count-users.use-case.ts
+│           │   ├── create-user
+│           │   │   └── create-user.use-case.ts
+│           │   ├── delete-user-by-id
+│           │   │   └── delete-user-by-id.ts
+│           │   ├── find-user-by-id
+│           │   │   └── find-user-by-id.use-case.ts
+│           │   ├── list-users
+│           │   │   └── list-users.use-case.ts
+│           │   └── update-user
+│           │       └── update-user-use-case.ts
+│           ├── users.controller.ts
+│           └── users.module.ts
+├── test
+│   ├── app.e2e-spec.ts
+│   └── jest-e2e.json
+├── tree.txt
+├── tsconfig.build.json
+├── tsconfig.json
+└── yarn.lock
+
+26 directories, 48 files
