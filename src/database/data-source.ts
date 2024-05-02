@@ -13,7 +13,7 @@ export const DataSourceTypeORM = new DataSource({
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
-  ssl: false,
+  ssl: {rejectUnauthorized: false},
   synchronize: false,
   logging: false,
   entities: [User, Role],
